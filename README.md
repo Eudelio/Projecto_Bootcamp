@@ -3,7 +3,8 @@ Creamos una pagina web que permita a las persona encontrar soluciones rapidas pa
 
 # Fundamentación del proyecto 
 
-Agregar una fundamentacion breve del porqué se realiza el proyecto o que problematica soluciona 
+Analizamos algunas dificultades que tenemos en nuestros Emprendimientos 
+y en la sociedad misma;  
 
 
 # Integrantes del proyecto 
@@ -28,10 +29,10 @@ Agregar una fundamentacion breve del porqué se realiza el proyecto o que proble
 
 ## Instación ( Por ejemplo )
 ```bash
-git clone https://github.com/WilliBobadilla/ejemplo_readme_license.git 
+git clone  https://github.com/Eudelio/Projecto_Bootcamp.git
 ```
 ```bash 
-cd ejemplo_readme_license
+cd Projecto_Bootcamp
 ```
 
 ```bash 
