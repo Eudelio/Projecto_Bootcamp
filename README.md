@@ -1,5 +1,5 @@
 # Descripción básica del proyecto 
-Agregar una descripción basica del proyecto 
+Creamos una pagina web que permita a las persona encontrar soluciones rapidas para sus nececidades 
 
 # Fundamentación del proyecto 
 
@@ -7,10 +7,11 @@ Agregar una fundamentacion breve del porqué se realiza el proyecto o que proble
 
 
 # Integrantes del proyecto 
-* Nombre del primer integrante y @usuario en github
-* Nombre del segundo integrante y @usuario en github 
-* Nombre del tercer integrante,y @usuario en github y asi sucesivamente 
-
+* Eudelio Carmona y @Eudelio en github
+* Arnaldo Acosta y @Arnaldo 1995 en github 
+* Francisco Gomez y @frangomez87 en github 
+* Ruben Riveros y @rrelectricidad en github
+* Gabriel Quintana y @Gabriel88Alejandro en github
 
 
 ## Requirimientos de software (Por ejemplo ) 
