@@ -67,19 +67,19 @@
       <div class="intro-text">
         <div class="intro-lead-in">Bienvenidos a !</div>
         <div class="intro-heading text-uppercase">Guia ÑAIPYTYVÔ</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Averigua Mas</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#servicios">Averigua Mas</a>
       </div>
 
     </div>
   </header>
 <!-- Portfolio Grid -->
-<section class="bg-light page-section" id="SERVICIOS">
+<section class="bg-light page-section" id="servicios">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
               <h2 class="section-heading text-uppercase">SERVICIOS</h2>
               <!-- <img src="http//eci.edu.mx/toluca/wp-content/uploads/2017/02/DSC0162.jpg"></a> -->
-              <h3 class="section-subheading text-muted">En esta seccion podras encontrar todas nuestras ofertas</h3>
+              <h3 class="section-subheading text-muted" id="#services">En esta seccion podras encontrar todas nuestras ofertas</h3>
             </div>
           </div>
           <div class="row">{% for lista in datos %}
@@ -97,7 +97,7 @@
                 <p class="text-muted">{{lista.nombre}}</p>
 
                 {{lista.ciudad}}<br>
-                {{lista.telefono}}<br>
+                0{{lista.telefono}}<br>
                 {{lista.breve_descripcion}}
               </div>
             </div>{% endfor %}
