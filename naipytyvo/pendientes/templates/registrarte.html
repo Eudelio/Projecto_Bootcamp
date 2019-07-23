@@ -39,10 +39,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Inicio">Inicio</a>
+            <a class="nav-link js-scroll-trigger" href="/">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/servicios">Servicios</a>
+            <a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#Historias">Historias</a>
@@ -87,28 +87,49 @@
         <div class="col-lg-12">
 
 
-          <form id="contactForm" name="sentMessage" novalidate="novalidate" method = "POST" action="nuevo">
+          <form id="contactForm" name="sentMessage" novalidate="novalidate" method = "POST" action="/nuevo" enctype="multipart/form-data">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <input class="form-control" id="name"  type="text" placeholder="Nombre *" required="required" data-validation-required-message="Please enter tu mensaje.">
+                    {% csrf_token %}
+
+
+                  <input class="form-control" name="nombre"  type="text" placeholder="Nombre *" required="required" data-validation-required-message="Please enter tu mensaje.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+                <div class="form-group">
+                  <input class="form-control" name="telefono" type="number" placeholder="Telefono *" required="required" data-validation-required-message="Please enter tu email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+
+
+                <div class="form-group">
+                  <input class="form-control" name="ciudad" type="text" placeholder="Ciudad *" required="required" data-validation-required-message="Please enter telefono number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              
+                <div class="form-group">
+                  <input class="form-control" name="servicio" type="text" placeholder="Servicio *" required="required" data-validation-required-message="Please enter telefono number.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Telefono *" required="required" data-validation-required-message="Please enter tu email address.">
+                  <input class="form-control" name="descripcion" type="text" placeholder="Describi tu Servicio *" required="required" data-validation-required-message="Please enter telefono number.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Ciudad *" required="required" data-validation-required-message="Please enter telefono number.">
+                  <input name="imagen" type="file" placeholder="Imagen *" required="required" data-validation-required-message="Please enter telefono number.">
                   <p class="help-block text-danger"></p>
+
+
                 </div>
+              
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Tu Mensaje *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
+
+
+
+
+          
               <div class="clearfix"></div>
               <div class="col-lg-12 text-center">
                 <div id="success"></div>
