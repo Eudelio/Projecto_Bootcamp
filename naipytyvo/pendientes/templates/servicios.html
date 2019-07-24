@@ -44,11 +44,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#Inicio">Inicio</a>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#servicios">Servicios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#Historias">Historias</a>
+            <a class="nav-link js-scroll-trigger" href="#Historias">Historias</a>-->
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contactos">Contactos</a>
@@ -87,7 +87,7 @@
           </div>
           <div class="row">{% for lista in datos %}
             <div class="col-md-4 col-sm-6 portfolio-item">
-              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ lista.nro }}">
+              <a class="portfolio-link" data-toggle="modal" href="#portfolioModal{{ lista.id }}">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fas fa-plus fa-3x"></i>
@@ -266,7 +266,7 @@
   <!-- Portfolio Modals -->
   {% for lista in datos %}
   <!-- Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal{{ lista.nro }}" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal{{ lista.id }}" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
